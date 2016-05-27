@@ -1,0 +1,1 @@
+angular.module('brainGames', ['ngRoute', 'ui.bootstrap']);

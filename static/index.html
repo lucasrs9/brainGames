@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width">
+    <title>Projeto</title>
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body class="background header container-fluid">
+
+<!-- Carrega Menu Fixo-->
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Brain Games</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="../index.html">Home</a></li>
+                <li><a href="modulos/projeto.html">Projeto</a></li>
+                <li><a href="modulos/equipe.html">Equipe</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row row-offcanvas row-offcanvas-right header">
+
+        <div class="col-xs-3 col-sm-3 sidebar-offcanvas" id="sidebar">
+            <div class="list-group">
+                <br>
+                <br>
+                <br>
+                <a class="list-group-item list-group-item-heading">Categorias</a>
+                <a href="views/jmemoria_lvl.php" class="list-group-item"> Memoria de curto prazo</a>
+                <a href="views/jcoordenacaoMot.php" class="list-group-item"> Coordenacao motora</a>
+                <a href="#" class="list-group-item"> Procurar mais pra colocar...</a>
+            </div>
+        </div>
+        <div class="col-sm-9 col-md-9">
+            <div class="col-sm-12 col-md-12" style="margin-bottom: 15px">
+                <a class="list-group-item list-group-item-heading">Jogos populares</a>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="modulos/img/logojv.png">
+                    <div class="caption">
+                        <h3>Jogo da velha</h3>
+                        <p>...</p>
+                        <p><a href="views/jogovelha.php" class="btn btn-primary btn-block btn-group-lg" role="button">
+                            Jogar</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="modulos/img/logojm.png">
+                    <div class="caption">
+                        <h3>Jogo da memoria</h3>
+                        <p>...</p>
+                        <p><a href="views/jmemoria_lvl.php" class="btn btn-primary btn-block btn-group-lg"
+                              role="button"> Jogar</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
