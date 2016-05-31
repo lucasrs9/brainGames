@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width">
-    <title>Projeto</title>
+    <title>Home</title>
     <script src="libs/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
 
@@ -12,11 +12,11 @@
 </head>
 <body class="background header container-fluid">
 
-<!-- Carrega Menu Fixo-->
 <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -26,7 +26,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="../index.html">Home</a></li>
+                <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="modulos/info/projeto.html">Projeto</a></li>
                 <li><a href="modulos/info/equipe.html">Equipe</a></li>
             </ul>
@@ -43,9 +43,8 @@
                 <br>
                 <br>
                 <a class="list-group-item list-group-item-heading">Categorias</a>
-                <a href="views/jmemoria_lvl.php" class="list-group-item"> Memoria de curto prazo</a>
-                <a href="views/jcoordenacaoMot.php" class="list-group-item"> Coordenacao motora</a>
-                <a href="#" class="list-group-item"> Procurar mais pra colocar...</a>
+                <a href="modulos/jogos/jogoMemoria/jogoMemoria.html" class="list-group-item"> Memoria de curto prazo</a>
+                <a href="modulos/jogos/jogoRaciocinio/jogoRaciocinio.html" class="list-group-item"> Raciocinio Logico</a>
             </div>
         </div>
         <div class="col-sm-9 col-md-9">
@@ -53,25 +52,29 @@
                 <a class="list-group-item list-group-item-heading">Jogos populares</a>
             </div>
 
-            <div class="col-sm-6 col-md-4">
+            <div class="col-sm-6 col-md-6">
                 <div class="thumbnail">
-                    <img src="modulos/img/logojv.png">
+                    <img src="../../brainGames/static/modulos/img/logojv.png">
                     <div class="caption">
                         <h3>Jogo da velha</h3>
-                        <p>...</p>
-                        <p><a href="views/jogovelha.php" class="btn btn-primary btn-block btn-group-lg" role="button">
+                        <p class="text-justify"> Ut enim ad minim veniam, excepteur sint occaecat cupidatat non
+                            proident, exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat. </p>
+                        <p><a href="modulos/jogos/jogoRaciocinio/jogoVelha/jgVelha.html" class="btn btn-primary btn-block btn-group-lg" role="button">
                             Jogar</a></p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-sm-6 col-md-4">
+            <div class="col-sm-6 col-md-6">
                 <div class="thumbnail">
-                    <img src="modulos/img/logojm.png">
+                    <img src="../../brainGames/static/modulos/img/logojm.png">
                     <div class="caption">
                         <h3>Jogo da memoria</h3>
-                        <p>...</p>
-                        <p><a href="views/jmemoria_lvl.php" class="btn btn-primary btn-block btn-group-lg"
+                        <p class="text-justify"> Ut enim ad minim veniam, excepteur sint occaecat cupidatat non
+                            proident, exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat. </p>
+                        <p><a href="modulos/jogos/jogoMemoria/jmMedio/jmMedio.html" class="btn btn-primary btn-block btn-group-lg"
                               role="button"> Jogar</a></p>
                     </div>
                 </div>

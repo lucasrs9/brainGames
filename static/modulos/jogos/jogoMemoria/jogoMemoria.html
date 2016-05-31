@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width">
+    <title>Home</title>
+    <script src="../../../libs/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../libs/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../../../libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../../static/style.css">
+
+</head>
+
+<body class="background header container-fluid" onload="GameControl.createGame()">
+
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../../../index.html">Brain Games</a>
+
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="../../../index.html">Home</a></li>
+                <li><a href="../../../modulos/info/projeto.html">Projeto</a></li>
+                <li><a href="../../../modulos/info/equipe.html">Equipe</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="col-md-12">
+    <h1 class="text-center"> Jogos para memória de curto prazo</h1>
+    <div class="col-md-12">
+        <h2>Jogo da memória</h2>
+        <hr>
+    </div>
+    <div class="col-md-6 text-justify">
+        <p>
+        <h3>> Objetivo do jogo:
+            <small>encontrar pares com imagens iguais.</small>
+            <br>
+            <hr>
+            <br>
+            > Como jogar:
+            <small>
+                as cartas serão postas com as imagens para baixo, para que não
+                possam ser vistas. O jogador deve escolher uma carta clicando com o mouse
+                em cima da carta, para que vire e fique visivel a imagem. Em seguinda escolha
+                outra carta clicando em cima para que fique visivel também. Caso as cartas
+                sejam diferentes, as mesma vão virar para baixo indicando que a escolha não
+                foi correta, porém se as cartas forem iguais isso indica que houve acerto, e o
+                jogador pode proseguir com as jogas até que todas as imagens estejam
+                virados para cima, ou seja visíveis.
+            </small>
+            <br>
+            <hr>
+            <br>
+            > Benefícios que traz em jogar:
+            <small>
+                I. desenvolve o raciocínio rápido;
+                II. a memória fotográfica;
+                III. ajuda a prevenir e combater o declinio cognitivo (processo de conhecer, que
+                envolver atenção, percepção, memória, raciocínio, juízo, imaginação, pensamento,
+                linguaguem e ação) que ocorre com o envelhecimento e protege contra doenças
+                degenerativas, como o Alzheimer.
+            </small>
+            <hr>
+        </h3>
+        </p>
+    </div>
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-6 thumbnail">
+                <img src="../../../../../brainGames/static/modulos/img/logojm.png">
+            </div>
+            <div class="col-md-6">
+                <div class="caption">
+                    <h3>Jogo da memoria</h3>
+                    <p>
+                    <li><strong>modo Facil</strong></li>
+                    </p>
+                    <p><a href="jmFacil/jmFacil.html" class="btn btn-primary btn-block btn-group-lg" role="button">
+                        Jogar</a></p>
+                </div>
+            </div>
+        </div>
+
+        <hr class="visible-xs">
+
+        <div class="row">
+            <div class="col-md-6 thumbnail">
+                <img src="../../../../../brainGames/static/modulos/img/logojm.png">
+            </div>
+            <div class="col-md-6">
+                <div class="caption">
+                    <h3>Jogo da memoria</h3>
+                    <p>
+                    <li><strong>modo Medio</strong></li>
+                    </p>
+                    <p><a href="jmMedio/jmMedio.html" class="btn btn-primary btn-block btn-group-lg" role="button">
+                        Jogar</a></p>
+                </div>
+            </div>
+        </div>
+
+        <hr class="visible-xs">
+
+        <div class="row">
+            <div class="col-md-6 thumbnail">
+                <img src="../../../../../brainGames/static/modulos/img/logojm.png">
+            </div>
+            <div class="col-md-6">
+                <div class="caption">
+                    <h3>Jogo da memoria</h3>
+                    <p>
+                    <li><strong>modo Dificil</strong></li>
+                    </p>
+                    <p><a href="jmDificil/jmDificil.html" class="btn btn-primary btn-block btn-group-lg" role="button">
+                        Jogar</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
