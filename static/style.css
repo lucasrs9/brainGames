@@ -84,3 +84,14 @@
 .hr{
     border-top: 1px solid #000;
 }
+
+/* JOGO DA MEMORIA*/
+.main{
+    width:660px;
+    margin:0 auto;
+}
+
+#score{
+    margin : 0 0 0 500px;
+    font-size: 25px;
+}
