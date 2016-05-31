@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width">
+    <title>Jogo da Memoria</title>
+    <script src="../libs/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../libs/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+</head>
+<body class="background header container-fluid">
+
+<!------>
+<!------>
+<!------>
+<!---  NAVBAR --->
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../index.html">Brain Games</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="projeto.html">Projeto</a></li>
+                <li><a href="equipe.html">Equipe</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--- jogo da velha--->
+<div>
+    <div class="text-center">
+        <h4> Jogador 1 = X </h4>
+        <br>
+        <h4> Jogador 2 = O </h4>
+        <h4>Jogar Contra Máquina
+            <input type="checkbox" id="cpu" checked/><br/>
+        </h4>
+    </div>
+
+    <table border="5px" cellspacing="7" align="center">
+        <tr>
+            <td><img src="../img/fundo.jpg" id="1" onclick="chkJogo(this.id)"></td>
+            <td><img src="../img/fundo.jpg" id="2" onclick="chkJogo(this.id)"></td>
+            <td><img src="../img/fundo.jpg" id="3" onclick="chkJogo(this.id)"></td>
+        </tr>
+        <tr>
+            <td><img src="../img/fundo.jpg" id="4" onclick="chkJogo(this.id)"></td>
+            <td><img src="../img/fundo.jpg" id="5" onclick="chkJogo(this.id)"></td>
+            <td><img src="../img/fundo.jpg" id="6" onclick="chkJogo(this.id)"></td>
+        </tr>
+        <tr>
+            <td><img src="../img/fundo.jpg" id="7" onclick="chkJogo(this.id)"></td>
+            <td><img src="../img/fundo.jpg" id="8" onclick="chkJogo(this.id)"></td>
+            <td><img src="../img/fundo.jpg" id="9" onclick="chkJogo(this.id)"></td>
+        </tr>
+    </table>
+    <div>
+        <input type="submit" id="reinicia" value="Reiniciar" class="btn btn-lg btn-primary" onclick="reinicia()"
+               checked>
+    </div>
+</body>
+</html>
