@@ -1,5 +1,3 @@
-angular.module('brainGames.jogosMemoria').controller(function () {
-
     function ScoreBoardGameControl() {
         var score = 0;
         var POINT_GAME = 10;
@@ -27,7 +25,7 @@ angular.module('brainGames.jogosMemoria').controller(function () {
     }
 
     function Card(picture) {
-        var FOLDER_IMAGES = '../img/jm_dificil/'
+        var FOLDER_IMAGES = '../../img/jm_medio/'
         var IMAGE_QUESTION = "question.png"
         this.picture = picture;
         this.visible = false;
@@ -95,8 +93,8 @@ angular.module('brainGames.jogosMemoria').controller(function () {
     }
 
     function CardGame(cards, controllerLogicGame, scoreBoard) {
-        var LINES = 5;
-        var COLS = 6;
+        var LINES = 4;
+        var COLS = 5;
         this.cards = cards;
         var logicGame = controllerLogicGame;
         var scoreBoardGameControl = scoreBoard;
@@ -153,7 +151,8 @@ angular.module('brainGames.jogosMemoria').controller(function () {
     }
 
     function BuilderCardGame() {
-        var pictures = new Array('1.png', '1.png',
+        var pictures = new Array(
+            '1.png', '1.png',
             '2.png', '2.png',
             '3.png', '3.png',
             '4.png', '4.png',
@@ -162,12 +161,7 @@ angular.module('brainGames.jogosMemoria').controller(function () {
             '7.png', '7.png',
             '8.png', '8.png',
             '9.png', '9.png',
-            '10.png', '10.png',
-            '11.png', '11.png',
-            '12.png', '12.png',
-            '13.png', '13.png',
-            '14.png', '14.png',
-            '15.png', '15.png');
+            '10.png', '10.png');
 
         this.doCardGame = function () {
             shufflePictures();
@@ -210,4 +204,3 @@ angular.module('brainGames.jogosMemoria').controller(function () {
         cardGame = builderCardGame.doCardGame();
         cardGame.show();
     }
-});
